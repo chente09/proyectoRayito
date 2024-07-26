@@ -9,14 +9,19 @@
         body {
             font-family: Arial, sans-serif;
             margin: 0;
-            padding-top: 100px; /* Eliminar padding del body */
-            background-color: rgba(0, 0, 0, 0.9); /* Color de fondo por defecto */
+            padding-top: 100px;
+            /* Eliminar padding del body */
+            background-color: rgba(0, 0, 0, 0.9);
+            /* Color de fondo por defecto */
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 100vh; /* Altura completa de la ventana */
-            overflow: hidden; /* Para evitar el scroll debido a los corazones */
-            position: relative; /* Necesario para los corazones absolutos */
+            height: 100vh;
+            /* Altura completa de la ventana */
+            overflow: hidden;
+            /* Para evitar el scroll debido a los corazones */
+            position: relative;
+            /* Necesario para los corazones absolutos */
         }
 
         .playlist-container {
@@ -28,7 +33,7 @@
             border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             width: 50%;
-            
+
         }
 
         .playlist {
@@ -66,12 +71,14 @@
             margin: 5px 0 0;
             color: #e0e0e0;
         }
+
         .heart {
             position: absolute;
             width: 20px;
             height: 20px;
             background-color: red;
-            transform: rotate(45deg);
+            transform: rotate(-50deg);
+            /* Cambiar la rotación */
             animation: float 5s linear infinite;
         }
 
@@ -97,12 +104,12 @@
 
         @keyframes float {
             0% {
-                transform: translateY(0) rotate(45deg);
+                transform: translateY(-100vh) rotate(-50deg);/* Empezar desde arriba */
                 opacity: 1;
             }
 
             100% {
-                transform: translateY(-100vh) rotate(45deg);
+                transform: translateY(0) rotate(-50deg);/* Mover hacia abajo */
                 opacity: 0;
             }
         }
@@ -111,9 +118,9 @@
 
 <body>
 
-    
+
     <div class="playlist-container">
-        
+
         <ul class="playlist">
             <h1>Mi Playlist</h1>
             <li>
