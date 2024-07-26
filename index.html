@@ -8,9 +8,25 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
             margin: 0;
+            padding-top: 80px; /* Eliminar padding del body */
+            background-color: #f4f4f4; /* Color de fondo por defecto */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; /* Altura completa de la ventana */
+        }
+
+        .playlist-container {
+            background-image: url("Imagen%20de%20WhatsApp%202024-07-25%20a%20las%2023.51.42_f1b7d2c3.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
             padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 50%;
+            
         }
 
         .playlist {
@@ -19,7 +35,7 @@
         }
 
         .playlist li {
-            background: #fff;
+            background: rgba(0, 0, 0, 0.3);
             margin: 10px 0;
             padding: 15px;
             border-radius: 5px;
@@ -53,52 +69,111 @@
 
 <body>
 
-    <h1>Mi Playlist</h1>
-    <ul class="playlist">
-        <li>
-            <a href="https://youtu.be/ridGylKQ0WY" target="_blank"
-                style="display: flex; align-items: center; text-decoration: none; color: inherit;">
-                <img src="https://images.stockcake.com/public/2/a/5/2a51cf42-cd4f-45c8-ab5e-fb3f8afe83a1_large/serene-paper-boat-stockcake.jpg"
-                    alt="Cover 1">
-                <div class="details">
-                    <h3>Es la canción que mas me recuerda a ti</h3>
-                    <p>Artista 1 - Álbum 1</p>
-                </div>
-            </a>
-        </li>
-        <li>
-            <a href="https://youtu.be/qFADwygTKz8" target="_blank"
-                style="display: flex; align-items: center; text-decoration: none; color: inherit;">
-                <img src="https://images.stockcake.com/public/4/8/c/48c41ca0-c0c9-4634-a192-da12fb8f9c9d_large/serene-sunrise-scene-stockcake.jpg"
-                    alt="Cover 2">
-                <div class="details">
-                    <h3>Y sí 💫, me enamoras con todo ❤️</h3>
-                    <p>Artista 2 - Álbum 2</p>
-                </div>
-            </a>
-        </li>
-        <li>
-            <a href="" target="_blank"
-                style="display: flex; align-items: center; text-decoration: none; color: inherit;">
-                <img src="" alt="Cover 2">
-                <div class="details">
-                    <h3>Nombre de la Canción</h3>
-                    <p>Artista - Álbum</p>
-                </div>
-            </a>
-        </li>
-        <li>
-            <a href="" target="_blank"
-                style="display: flex; align-items: center; text-decoration: none; color: inherit;">
-                <img src="" alt="Cover 2">
-                <div class="details">
-                    <h3>Nombre de la Canción</h3>
-                    <p>Artista - Álbum</p>
-                </div>
-            </a>
-        </li>
-        <!-- Agrega más canciones aquí -->
-    </ul>
+    
+    <div class="playlist-container">
+        
+        <ul class="playlist">
+            <h1>Mi Playlist</h1>
+            <li>
+                <a href="https://youtu.be/ridGylKQ0WY" target="_blank"
+                    style="display: flex; align-items: center; text-decoration: none; color: inherit;">
+                    <img src="https://images.stockcake.com/public/2/a/5/2a51cf42-cd4f-45c8-ab5e-fb3f8afe83a1_large/serene-paper-boat-stockcake.jpg"
+                        alt="Cover 1">
+                    <div class="details">
+                        <h3>Es la canción que mas me recuerda a ti</h3>
+                        <p>Artista 1 - Álbum 1</p>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="https://youtu.be/qFADwygTKz8" target="_blank"
+                    style="display: flex; align-items: center; text-decoration: none; color: inherit;">
+                    <img src="https://images.stockcake.com/public/4/8/c/48c41ca0-c0c9-4634-a192-da12fb8f9c9d_large/serene-sunrise-scene-stockcake.jpg"
+                        alt="Cover 2">
+                    <div class="details">
+                        <h3>Y sí 💫, me enamoras con todo ❤️</h3>
+                        <p>Artista 2 - Álbum 2</p>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="https://youtu.be/qFADwygTKz8" target="_blank"
+                    style="display: flex; align-items: center; text-decoration: none; color: inherit;">
+                    <img src="https://images.stockcake.com/public/4/8/c/48c41ca0-c0c9-4634-a192-da12fb8f9c9d_large/serene-sunrise-scene-stockcake.jpg"
+                        alt="Cover 2">
+                    <div class="details">
+                        <h3>Y sí 💫, me enamoras con todo ❤️</h3>
+                        <p>Artista 2 - Álbum 2</p>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="https://youtu.be/qFADwygTKz8" target="_blank"
+                    style="display: flex; align-items: center; text-decoration: none; color: inherit;">
+                    <img src="https://images.stockcake.com/public/4/8/c/48c41ca0-c0c9-4634-a192-da12fb8f9c9d_large/serene-sunrise-scene-stockcake.jpg"
+                        alt="Cover 2">
+                    <div class="details">
+                        <h3>Y sí 💫, me enamoras con todo ❤️</h3>
+                        <p>Artista 2 - Álbum 2</p>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="https://youtu.be/qFADwygTKz8" target="_blank"
+                    style="display: flex; align-items: center; text-decoration: none; color: inherit;">
+                    <img src="https://images.stockcake.com/public/4/8/c/48c41ca0-c0c9-4634-a192-da12fb8f9c9d_large/serene-sunrise-scene-stockcake.jpg"
+                        alt="Cover 2">
+                    <div class="details">
+                        <h3>Y sí 💫, me enamoras con todo ❤️</h3>
+                        <p>Artista 2 - Álbum 2</p>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="https://youtu.be/qFADwygTKz8" target="_blank"
+                    style="display: flex; align-items: center; text-decoration: none; color: inherit;">
+                    <img src="https://images.stockcake.com/public/4/8/c/48c41ca0-c0c9-4634-a192-da12fb8f9c9d_large/serene-sunrise-scene-stockcake.jpg"
+                        alt="Cover 2">
+                    <div class="details">
+                        <h3>Y sí 💫, me enamoras con todo ❤️</h3>
+                        <p>Artista 2 - Álbum 2</p>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="https://youtu.be/qFADwygTKz8" target="_blank"
+                    style="display: flex; align-items: center; text-decoration: none; color: inherit;">
+                    <img src="https://images.stockcake.com/public/4/8/c/48c41ca0-c0c9-4634-a192-da12fb8f9c9d_large/serene-sunrise-scene-stockcake.jpg"
+                        alt="Cover 2">
+                    <div class="details">
+                        <h3>Y sí 💫, me enamoras con todo ❤️</h3>
+                        <p>Artista 2 - Álbum 2</p>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="" target="_blank"
+                    style="display: flex; align-items: center; text-decoration: none; color: inherit;">
+                    <img src="" alt="Cover 3">
+                    <div class="details">
+                        <h3>Nombre de la Canción</h3>
+                        <p>Artista - Álbum</p>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="" target="_blank"
+                    style="display: flex; align-items: center; text-decoration: none; color: inherit;">
+                    <img src="" alt="Cover 4">
+                    <div class="details">
+                        <h3>Nombre de la Canción</h3>
+                        <p>Artista - Álbum</p>
+                    </div>
+                </a>
+            </li>
+            <!-- Agrega más canciones aquí -->
+        </ul>
+    </div>
 
 </body>
 
